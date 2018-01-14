@@ -17,6 +17,29 @@ import java.io.InputStream;
 
 public class MainActivity extends AppCompatActivity {
 
+    // <対象> のファイルは, git status で表示させて、
+    // ダブルクリックで選択してコピペすればいい。
+
+    // $ git statu
+    //　これは変更のテスト
+
+    // 変更を見るには
+    // $ git diff <対象>
+    // 例: $ git diff app/src/main/java/io/keiji/intentapplication/MainActivity.java
+    // ------ ここまでが確認する方法
+
+    // 変更を git に教える
+    // $ git add <対象>
+    // ... git status で赤く表示された部分を緑色にする。
+    // ... 緑色にしたファイルは、 「git がすでにわかっているファイル」
+
+    // (もし, 間違えて add してしまった場合)
+    // ($ git reset <対象>)
+
+    //「git がすでにわかっているファイル」を git の log に登録する。
+    // $ git commit -m "  --commit コメント-- "
+
+
     static final int REQUEST_CODE_MAP = 1;
     static final int REQUEST_CODE_MAIL = 2;
     static final int REQUEST_CODE_CAMERA = 3;
