@@ -20,6 +20,11 @@ public class MainActivity extends AppCompatActivity {
     // <対象> のファイルは, git status で表示させて、
     // ダブルクリックで選択してコピペすればいい。
 
+    // コマンドライン上でもとに戻せなくなったときの対応
+    // [q] ... q を押すだけ。
+    // [ctr + D], [ctr + C] ... 実行中のプログラムを強制終了する。
+    // -------
+
     // $ git statu
     //　これは変更のテスト
 
